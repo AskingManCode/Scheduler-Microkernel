@@ -22,7 +22,7 @@ void inicializar_proceso(PCB *proceso, int pid, long rafaga_total, long llegada)
 }
 
 /**
- * Convierte un estado de proceso a su nombre convertido en texto.
+ * Devuelve el nombre de un estado de proceso como como char, convertido a texto simple.
  */
 const char *nombre_estado_proceso(EstadoProceso estado) // Devuelve un puntero a una cadena constante.
 {
@@ -52,7 +52,7 @@ void imprimir_evento_proceso(const PCB *proceso, long tiempo_actual, const char 
 }
 
 /**
- * Muestra una fila de resultados de un proceso.
+ * Imprime los resultados finales de un proceso.
  */
 void imprimir_resultado_proceso(const PCB *proceso, long tiempo_espera, long tiempo_respuesta, long tiempo_retorno)
 {
