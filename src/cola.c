@@ -20,7 +20,7 @@ int agregar_cola(ColaListos *cola, int indice_proceso)
 {
     if (cola -> cantidad >= CAPACIDAD_COLA)
     {
-        printf(stderr, "La cola de listos esta llena (Capacidad = %d)\n",
+        fprintf(stderr, "La cola de listos esta llena (Capacidad = %d)\n",
                 CAPACIDAD_COLA);
         
         return -1;
@@ -45,7 +45,7 @@ int sacar_cola(ColaListos *cola)
 {
     if (cola_vacia(cola) == 1)
     {
-        printf(stderr, "La cola de listos esta vacia.\n");
+        fprintf(stderr, "La cola de listos esta vacia.\n");
         return -1;
     }
 

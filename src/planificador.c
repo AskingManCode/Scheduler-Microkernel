@@ -96,8 +96,6 @@ void planificador_RoundRobin(PCB *tabla_PCB, int total_procesos, int quantum, lo
              */
             tiempo_actual += p -> tiempo_restante;
 
-            tiempo_actual += p -> tiempo_restante;
-
             p -> tiempo_restante = 0;
 
             p -> estado = TERMINADO; // Cambiod e estado
@@ -115,9 +113,9 @@ void planificador_RoundRobin(PCB *tabla_PCB, int total_procesos, int quantum, lo
              */
             tiempo_actual += quantum;
 
-            p->tiempo_restante -= quantum;
+            p -> tiempo_restante -= quantum;
 
-            p->estado = LISTO; // Camvio de estado
+            p -> estado = LISTO; // Camvio de estado
 
             imprimir_evento_proceso(p, tiempo_actual, "quantum agotado, vuelve a LISTO.");
 

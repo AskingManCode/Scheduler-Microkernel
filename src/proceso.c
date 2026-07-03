@@ -48,7 +48,7 @@ const char *nombre_estado_proceso(EstadoProceso estado) // Devuelve un puntero a
 void imprimir_evento_proceso(const PCB *proceso, long tiempo_actual, const char *evento)
 {
     printf("[reloj] = %4ld | PID = %-3d | Estado = %-10s | Tiempo Restante = %-4ld | Evento = %s\n",
-            tiempo_actual, proceso -> pid, nombre_estado_proceso(proceso -> estado), evento);
+        tiempo_actual, proceso->pid, nombre_estado_proceso(proceso->estado), proceso->tiempo_restante, evento);
 }
 
 /**

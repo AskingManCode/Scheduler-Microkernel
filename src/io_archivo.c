@@ -78,7 +78,7 @@ int io_generar_archivo(const char *ruta, int cantidad_procesos, int rafaga_min, 
     /** 
      * Bluque principal para generar cada proceso
      */
-    for (int i = 0; 1 < cantidad_procesos; i++)
+    for (int i = 0; i < cantidad_procesos; i++)
     {
         // Tamanio aleatorio de la rafaga
         int tamanio = rafaga_min + (rand() % (rafaga_max - rafaga_min + 1));
@@ -103,7 +103,8 @@ void io_guardar_resultados(const char *ruta, const PCB *tabla_PCB, int total_pro
 {
     FILE *archivo = fopen(ruta, "a");
 
-    if (archivo == NULL) {
+    if (archivo == NULL) 
+    {
         perror("Error abriendo el archivo de resultados.");
         return;
     }
