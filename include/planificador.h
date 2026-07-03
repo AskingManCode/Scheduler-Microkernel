@@ -23,7 +23,7 @@
 // CONSTANTES
 // -------------------------------------------------------------
 
-#define QUANTUM_DEFECTO 4 // 4 unidades de tiempo
+#define QUANTUM_DEFECTO 4 // Unidades de tiempo
 
 
 // -------------------------------------------------------------
