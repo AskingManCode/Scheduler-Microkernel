@@ -30,6 +30,6 @@
 // FUNCIONES (Contratos)
 // -------------------------------------------------------------
 
-void planificador(PCB *tabla_PCB, int total_procesos, int quantum, long *esperas, long *respuestas, long *retornos, int pausa_ms);
+void planificador_RoundRobin(PCB *tabla_PCB, int total_procesos, int quantum, long *esperas, long *respuestas, long *retornos, int pausa_ms);
 
 #endif // PLANIFICADOR_H
