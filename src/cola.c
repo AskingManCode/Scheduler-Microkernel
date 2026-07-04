@@ -11,7 +11,7 @@ void iniciar_cola(ColaListos *cola)
     cola -> head = 0;
     cola -> tail = 0;
     cola -> cantidad = 0;
-}
+} 
 
 /**
  * Agrega un elemento al final de la cola.
